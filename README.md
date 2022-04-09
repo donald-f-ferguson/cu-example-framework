@@ -1,4 +1,23 @@
-# cu-example-framework
+# Columbia University Courses Framework
 
-This is a hacked together "framework" that provides a structure for REST API serving
-using Flask. My Columbia Courses use this framework.
+## Overview
+
+See the dffframework/dffframework/README.md for information
+about the framework.
+
+This is just the top-level readme for the GIT project.
+
+## Installation
+
+This installs from a local [devpi](https://devpi.net/docs/devpi/devpi/latest/+doc/index.html) server.
+
+My local install commands are:
+- One time: ```pip install -U devpi-web devpi-client```
+- This assumes that the devpi server is installed and running. My local project
+for the server is ```dev_pi```
+  - ```devpi login testuser --password=123```
+  - ```cd dffframework```
+  - ```devpi index -c bases=root/pypi```
+  - ```devpi use testuser/dev```
+  - ```devpi use```
+
